@@ -1,0 +1,251 @@
+/* SnowSight - Snowflake-branded TUI stylesheet */
+
+Screen {
+    layout: horizontal;
+    background: #0d1b2a;
+}
+
+/* ── Left panel ─────────────────────────────────────────────────────────── */
+
+#left-panel {
+    width: 32;
+    background: #132032;
+    border-right: solid #1e3a52;
+    layout: vertical;
+}
+
+#app-header {
+    height: 14;
+    dock: top;
+    background: #0d1b2a;
+    content-align: left top;
+    border-bottom: solid #1e3a52;
+    padding: 1 0;
+}
+
+ObjectExplorer {
+    height: 1fr;
+    background: #132032;
+    color: #e8f4fd;
+    scrollbar-color: #1e3a52;
+    scrollbar-color-hover: #29B5E8;
+    scrollbar-size-vertical: 1;
+}
+
+Tree > .tree--cursor {
+    background: #1e3a52;
+    color: #29B5E8;
+}
+
+Tree > .tree--highlight {
+    background: #1e3a52;
+}
+
+Tree > .tree--guides {
+    color: #1e3a52;
+}
+
+Tree > .tree--guides-selected {
+    color: #29B5E8;
+}
+
+UserBadge {
+    height: 3;
+    dock: bottom;
+    background: #0d1b2a;
+    color: #e8f4fd;
+    padding: 0 1;
+    border-top: solid #1e3a52;
+}
+
+#badge-content {
+    height: 3;
+    background: #0d1b2a;
+    color: #e8f4fd;
+    content-align: left middle;
+}
+
+/* ── Right panel ────────────────────────────────────────────────────────── */
+
+#right-panel {
+    width: 1fr;
+    layout: vertical;
+    background: #0d1b2a;
+}
+
+EditorPane {
+    height: 1fr;
+    layout: vertical;
+    background: #0d1b2a;
+    border-bottom: solid #1e3a52;
+    min-height: 8;
+}
+
+#editor-status-bar {
+    height: 1;
+    background: #29B5E8;
+    color: #0d1b2a;
+    padding: 0 1;
+    text-style: bold;
+    content-align: left middle;
+}
+
+#editor-toolbar {
+    height: 1;
+    background: #0d1b2a;
+    layout: horizontal;
+    border-bottom: solid #1e3a52;
+}
+
+#run-query-btn {
+    background: #1e3a52;
+    color: #e8f4fd;
+    border: none;
+    height: 1;
+    min-width: 13;
+}
+
+#run-all-btn {
+    background: #1e3a52;
+    color: #e8f4fd;
+    border: none;
+    height: 1;
+    min-width: 11;
+}
+
+#run-query-btn:hover,
+#run-all-btn:hover {
+    background: #29B5E8;
+    color: #0d1b2a;
+}
+
+#run-query-btn:focus,
+#run-all-btn:focus {
+    border: none;
+    background: #1e3a52;
+}
+
+TextArea {
+    height: 1fr;
+    background: #132032;
+    color: #e8f4fd;
+    border: none;
+}
+
+TextArea:focus {
+    border: solid #29B5E8;
+}
+
+/* ── Results pane ───────────────────────────────────────────────────────── */
+
+ResultsPane {
+    height: 1fr;
+    layout: vertical;
+    background: #0d1b2a;
+    min-height: 6;
+}
+
+DataTable {
+    height: 1fr;
+    background: #132032;
+    color: #e8f4fd;
+    scrollbar-color: #1e3a52;
+    scrollbar-color-hover: #29B5E8;
+    scrollbar-size-vertical: 1;
+    scrollbar-size-horizontal: 1;
+}
+
+DataTable > .datatable--header {
+    background: #29B5E8;
+    color: #0d1b2a;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #29B5E8;
+    color: #0d1b2a;
+}
+
+DataTable > .datatable--even-row {
+    background: #132032;
+}
+
+DataTable > .datatable--odd-row {
+    background: #0e1f30;
+}
+
+DataTable > .datatable--header-hover {
+    background: #29B5E8;
+    color: #0d1b2a;
+}
+
+RichLog {
+    height: 1fr;
+    background: #132032;
+    color: #e8f4fd;
+    display: none;
+    padding: 1;
+}
+
+RichLog.visible {
+    display: block;
+}
+
+#pagination-bar {
+    height: 1;
+    background: #132032;
+    color: #7ba8c4;
+    padding: 0 0;
+    layout: horizontal;
+    display: none;
+}
+
+#pagination-bar.active {
+    display: block;
+}
+
+#page-label {
+    width: 1fr;
+    color: #7ba8c4;
+    content-align: center middle;
+}
+
+#prev-page {
+    width: 4;
+    background: #1e3a52;
+    color: #e8f4fd;
+    border: none;
+    min-width: 4;
+}
+
+#next-page {
+    width: 4;
+    background: #1e3a52;
+    color: #e8f4fd;
+    border: none;
+    min-width: 4;
+}
+
+Button {
+    height: 1;
+    border: none;
+}
+
+Button:hover {
+    background: #29B5E8;
+    color: #0d1b2a;
+}
+
+Button:focus {
+    border: none;
+    background: #1e3a52;
+}
+
+#bottom-status-bar {
+    height: 2;
+    background: #132032;
+    color: #e8f4fd;
+    padding: 0 1;
+    content-align: left middle;
+    border-top: solid #1e3a52;
+}

@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# uv / virtualenv
+.venv/
+.python-version
+
+# uv lock is intentionally committed — do not ignore uv.lock
+
+# Distribution
+*.whl
+*.tar.gz
+
+# Environment / secrets
+.env
+.env.*
+*.env
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Textual dev tools
+.textual/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
