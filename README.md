@@ -39,8 +39,8 @@ A terminal UI (TUI) SQL client for Snowflake, built with [Textual](https://textu
 ## Installation
 
 ```bash
-git clone https://github.com/youruser/snowsight-cli.git
-cd snowsight-cli
+git clone https://github.com/sfc-gh-jwyant/jwyant-snowsightcli.git
+cd jwyant-snowsightcli
 uv sync
 ```
 
