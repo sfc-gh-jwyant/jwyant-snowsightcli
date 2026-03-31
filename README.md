@@ -2,21 +2,7 @@
 
 A terminal UI (TUI) SQL client for Snowflake, built with [Textual](https://textual.textualize.io/) and the Snowflake Python Connector.
 
-```
-┌────────────────────────────────┬──────────────────────────────────────────────┐
-│        Snowflake               │  DB: MYDB  |  Schema: PUBLIC  |  WH: XS      │
-│   SnowSight CLI                │  Run Query   Run All ▶                        │
-│                                │                                                │
-│  ▼ MYDB                        │  SELECT * FROM orders LIMIT 100;              │
-│    ▼ PUBLIC                    │                                                │
-│      ▶ Tables                  ├──────────────────────────────────────────────┤
-│      ▶ Views                   │  ORDER_ID  CUSTOMER_ID  AMOUNT   STATUS       │
-│      ▶ Procedures              │  1001       42          199.99   SHIPPED       │
-│      ...                       │  1002       17           49.00   PENDING       │
-│                                │                                                │
-│ [JW]  John Wyant               │  2 rows  |  0.143s                            │
-└────────────────────────────────┴──────────────────────────────────────────────┘
-```
+![SnowSight CLI screenshot](snowsightcli-screenshot.jpg)
 
 ## Features
 
